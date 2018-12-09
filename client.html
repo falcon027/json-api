@@ -1,0 +1,17 @@
+<p id="id"></p><br>
+<p id="Name"></p><br>
+<p id="Beschreibung"></p><br>
+<p id="Beschreibung1"></p><br>
+<script type="text/javascript">
+$.ajax({
+        url: "url.com/api.php?id="+search,
+    }).then(function(data) {
+       $('.id').append(data.id);
+       $('.Name ').append(data.Name);
+       $('.Beschreibung').append(data.Beschreibung);
+       $('.Beschreibung1').append(data.Beschreibung1);
+       //$('.Name').html(data.Name); // replaces the content
+       //$('.Beschreibung1').css("background",data.Beschreibung1); // puts css
+    });
+
+</script>
