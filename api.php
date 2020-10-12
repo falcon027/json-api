@@ -7,7 +7,6 @@ header('Content-Type: application/json');
 
 $database = "DB_Name";
 $spalte = "ID_spalte";
-
 $gesucht = $_GET["id"]; // for more security us: $gesucht = $_POST["id"];
 
 $pdo = new PDO('mysql:host=localhost;dbname= ', '', '');
